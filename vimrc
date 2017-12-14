@@ -17,7 +17,31 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'asciidoc/vim-asciidoc'
+Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" Themes
+colorscheme molokai
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" Leader keys
+let mapleader = ","
+nnoremap / /\v
+vnoremap / /\v
+
+nnoremap <leader><space> :nohls<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :qa!<cr>
+nnoremap <leader>x :x<cr>
+nnoremap <leader>X :xa<cr>
+nnoremap <leader>w <C-W><C-W>
+nnoremap <leader>W <C-W>W
