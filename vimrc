@@ -18,6 +18,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'asciidoc/vim-asciidoc'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
@@ -45,3 +46,9 @@ nnoremap <leader>x :x<cr>
 nnoremap <leader>X :xa<cr>
 nnoremap <leader>w <C-W><C-W>
 nnoremap <leader>W <C-W>W
+
+" MiniBufExpl
+nnoremap <leader>bl :MBEToggle<cr>
+nnoremap <C-N> :MBEbn<cr>
+nnoremap <C-P> :MBEbp<cr>
+nnoremap <leader>bw :MBEbd<cr>
