@@ -4,6 +4,7 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 set nobackup nowritebackup
 set number
 set incsearch
+set backspace=indent,eol,start
 
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
