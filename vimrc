@@ -1,3 +1,9 @@
+set ignorecase smartcase
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2
+set nobackup nowritebackup
+set number
+set incsearch
+
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
 if !filereadable(vundle_readme)
@@ -27,6 +33,7 @@ filetype plugin indent on    " required
 
 " Themes
 colorscheme molokai
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -35,7 +42,6 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " Leader keys
-let mapleader = ","
 nnoremap / /\v
 vnoremap / /\v
 
