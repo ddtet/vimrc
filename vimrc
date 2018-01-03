@@ -1,3 +1,4 @@
+set nocompatible
 set ignorecase smartcase
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 set nobackup nowritebackup
@@ -14,7 +15,6 @@ if !filereadable(vundle_readme)
   let iCanHazVundle=0
 endif
 
-set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -26,6 +26,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'asciidoc/vim-asciidoc'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tomasr/molokai'
+Plugin 'Shougo/neocomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +41,9 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" enable neocomplete
+let g:neocomplete#enable_at_startup = 1
 
 " Leader keys
 nnoremap / /\v
