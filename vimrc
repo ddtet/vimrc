@@ -5,6 +5,7 @@ set nobackup nowritebackup
 set number
 set incsearch
 set backspace=indent,eol,start
+set nowrap cursorline cursorcolumn
 
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
