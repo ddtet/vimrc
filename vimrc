@@ -1,5 +1,5 @@
 set nocompatible
-set ignorecase smartcase
+set ignorecase smartcase wildignorecase
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 set nobackup nowritebackup
 set number
