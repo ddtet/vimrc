@@ -52,6 +52,8 @@ nnoremap / /\v
 vnoremap / /\v
 
 nnoremap <leader><space> :nohls<cr>
+" add new line
+nnoremap <leader><cr> i<cr><C-[>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>Q :qa!<cr>
 nnoremap <leader>x :x<cr>
