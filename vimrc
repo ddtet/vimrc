@@ -1,5 +1,5 @@
 set nocompatible
-set ignorecase smartcase wildignorecase
+set ignorecase smartcase
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 set nobackup nowritebackup
 set number
@@ -29,6 +29,7 @@ Plugin 'asciidoc/vim-asciidoc'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tomasr/molokai'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,3 +67,12 @@ nnoremap <leader>bl :MBEToggle<cr>
 nnoremap <C-N> :MBEbn<cr>
 nnoremap <C-P> :MBEbp<cr>
 nnoremap <leader>bw :MBEbd<cr>
+
+" NERDTree config
+nnoremap <leader>fl :NERDTreeToggle<cr>
+let NERDTreeWinSize=32
+let NERDTreeWinPos="right"
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer=1
+
